@@ -1,0 +1,242 @@
+---
+title: "Quantium Project"
+author: "IghodaloStephanie"
+output: word_document
+date: "2026-05-28"
+---
+My Key Findings:
+
+Young Singles/Couples generated the highest chip sales.
+Mainstream customers purchased the largest quantity.
+175g pack sizes were most popular.
+Brand X dominated premium segments.
+
+My Recommendation:
+The company should target Mainstream Young Singles/Couples.
+Increase promotions on popular pack sizes.
+Place premium brands near high-traffic areas.
+
+
+```{r}
+Behaviour_data <- read.csv("QVI_purchase_behaviour.csv")
+
+head(Behaviour_data)
+```
+
+package installation
+
+
+install.packages("tidyverse", repos = "https://r-project.org")
+install.packages("janitor")
+install.packages("lubridate")
+install.packages("stringr")
+
+Import excel file(install package first)
+
+
+install.packages("readxl")
+
+
+
+```{r}
+library(readxl)
+Transaction_data <- read_excel("QVI_transaction_data.xlsx")
+ 
+head(Transaction_data)
+```
+```{r}
+str(Behaviour_data)
+str(Transaction_data)
+```
+
+Summary statistics
+```{r}
+summary(Behaviour_data)
+summary(Transaction_data)
+```
+Check for missing values
+```{r}
+colSums(is.na(Transaction_data))
+
+colSums(is.na(Behaviour_data))
+```
+No missing values in both data
+
+Checking for duplicates
+```{r}
+sum(duplicated(Transaction_data))
+sum(duplicated(Behaviour_data))
+```
+Removing duplicates
+```{r}
+library(tidyverse)
+Transaction_data <- distinct(Transaction_data)
+sum(duplicated(Transaction_data))
+```
+Converting Excel numeric date to actual date
+```{r}
+Transaction_data$DATE <- as.Date(Transaction_data$DATE, origin = "1899-12-30")
+head(Transaction_data$DATE)
+```
+
+```{r}
+unique(Transaction_data$PROD_NAME)
+```
+Count products containing salsa and Filter out salsa products
+```{r}
+Transaction_data %>%
+  filter(str_detect(PROD_NAME, "salsa|Salsa"))
+
+Transaction_data <- Transaction_data %>%
+  filter(!str_detect(PROD_NAME, "salsa|Salsa"))
+```
+
+```{r}
+Transaction_data <- Transaction_data %>%
+  mutate(PACK_SIZE = str_extract(PROD_NAME, "\\d+")) %>%
+  mutate(PACK_SIZE = as.numeric(PACK_SIZE))
+
+
+head(Transaction_data$PACK_SIZE)
+```
+```{r}
+Transaction_data <- Transaction_data %>%
+  mutate(BRAND = word(PROD_NAME, 1))
+
+unique(Transaction_data$BRAND)
+```
+Fixing inconsistent spellings
+```{r}
+Transaction_data$BRAND <- recode(Transaction_data$BRAND,
+                             "RED" = "RRD")
+
+Transaction_data %>%
+  ggplot(aes(x = PROD_QTY)) +
+  geom_boxplot()
+head(Transaction_data)
+```
+
+Customers purchasing unusually high quantities and remove outlier Customers
+```{r}
+Transaction_data %>%
+  group_by(LYLTY_CARD_NBR) %>%
+  summarise(total_qty = sum(PROD_QTY)) %>%
+  arrange(desc(total_qty))
+
+Transaction_data <- Transaction_data %>%
+  filter(LYLTY_CARD_NBR != 226000)
+```
+
+Merge data
+
+```{r}
+library("tidyverse")
+merged_data <- Transaction_data %>%
+  left_join(Behaviour_data, by = "LYLTY_CARD_NBR")
+
+head(merged_data)
+```
+
+merged_data <- merged_data %>%
+  mutate(TOT_SALES = PROD_QTY * TOT_SALES)
+  
+
+
+Analyzing Sales by Customer Segment
+
+```{r}
+segment_sales <- merged_data %>%
+  group_by(LIFESTAGE, PREMIUM_CUSTOMER) %>%
+  summarise(
+    total_sales = sum(TOT_SALES),
+    total_customers = n_distinct(LYLTY_CARD_NBR),
+    avg_sales = mean(TOT_SALES)
+  )
+
+segment_sales
+
+```
+
+Top-Selling Brands
+```{r}
+brand_sales <- merged_data %>%
+  group_by(BRAND) %>%
+  summarise(total_sales = sum(TOT_SALES)) %>%
+  arrange(desc(total_sales))
+
+brand_sales
+```
+
+Analyzing Pack Size Preferences
+
+```{r}
+pack_sales <- merged_data %>%
+  group_by(PACK_SIZE) %>%
+  summarise(total_sales = sum(TOT_SALES)) %>%
+  arrange(desc(total_sales))
+
+pack_sales
+```
+
+Visuals
+
+Sales by Life Stage
+
+```{r}
+merged_data %>%
+  group_by(LIFESTAGE) %>%
+  summarise(total_sales = sum(TOT_SALES)) %>%
+  ggplot(aes(x = reorder(LIFESTAGE, total_sales),
+             y = total_sales)) +
+  geom_col() +
+  coord_flip()
+```
+
+Sales by Premium Segment
+
+```{r}
+merged_data %>%
+  group_by(PREMIUM_CUSTOMER) %>%
+  summarise(total_sales = sum(TOT_SALES)) %>%
+  ggplot(aes(x = PREMIUM_CUSTOMER,
+             y = total_sales)) +
+  geom_col()
+
+theme_set(theme_bw())
+theme_update(plot.title = element_text(hjust = 0.5))
+```
+
+Plot transactions over time
+
+```{r}
+
+transactions_over_time <- Transaction_data %>%
+  group_by(DATE) %>%
+  summarise(num_transactions = n())
+
+transactions_over_time %>%
+  ggplot(aes(x = DATE, y = num_transactions)) +
+  geom_line() +
+  labs(
+    title = "Transactions Over Time",
+    x = "Date",
+    y = "Number of Transactions"
+  ) +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5))
+```
+
+Top Brands
+```{r}
+brand_sales %>%
+  top_n(10, total_sales) %>%
+  ggplot(aes(x = reorder(BRAND, total_sales),
+             y = total_sales)) +
+  geom_col() +
+  coord_flip()
+```
+
+
+
+
+
+
