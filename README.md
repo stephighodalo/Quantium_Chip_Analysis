@@ -21,6 +21,37 @@ This project analyzes customer purchasing behaviour in the chips category using 
 * Performed customer segmentation analysis
 * Built visualisations for sales trends
 
+## Visualisations and Exploratory Analysis
+
+The following visualisations explore customer purchasing behaviour, sales performance, brand preferences, and transaction trends within the chips category.
+
+<div align="center">
+
+<h3>Sales by Life Stage</h3>
+
+<img src="Plots/Sales%20by%20Life%20Stage.png" alt="Sales by Life Stage" width="700">
+
+<br><br>
+
+<h3>Sales by Premium Segment</h3>
+
+<img src="Plots/Sales%20by%20Premium%20Segment.png" alt="Sales by Premium Segment" width="700">
+
+<br><br>
+
+<h3>Top Brands</h3>
+
+<img src="Plots/Top%20Brands.png" alt="Top Brands" width="700">
+
+<br><br>
+
+<h3>Transactions Over Time</h3>
+
+<img src="Plots/Transactions%20over%20time.png" alt="Transactions over time" width="700">
+
+</div>
+
+
 ## Key Insights
 
 * Mainstream customers generated the highest chip sales
