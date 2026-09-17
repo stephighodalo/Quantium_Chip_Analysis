@@ -155,14 +155,5 @@ Create <strong>bundle and multi-pack offers</strong> aimed at family-oriented cu
 Tailor promotions according to <strong>life stage and customer segment</strong> rather than applying the same strategy across all customers. This can help align products and offers with specific purchasing behaviours.
 </p>
 
-<h3>Overall Recommendation</h3>
 
-<p>
-Prioritise <strong>Mainstream Young Singles/Couples</strong>, support demand for <strong>175g packs</strong>, maintain strong visibility for <strong>high-performing brands</strong>, and introduce targeted bundle offers for family segments.
-</p>
-
-
-## Author
-
-Stephanie Ighodalo
 
