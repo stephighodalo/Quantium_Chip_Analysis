@@ -123,11 +123,7 @@ These findings can support targeted promotions, product placement decisions, bra
 </table>
 
 
-## Recommendations
-
-<table>
-<tr>
-<td width="50%" valign="top">
+<h2>Recommendations</h2>
 
 <h3>1. Target Mainstream Young Singles/Couples</h3>
 
@@ -135,21 +131,11 @@ These findings can support targeted promotions, product placement decisions, bra
 Focus marketing campaigns and targeted promotions on <strong>Mainstream Young Singles/Couples</strong>, as this segment contributes significantly to overall chip sales. Personalised offers and digital promotions could encourage repeat purchases and increase basket size.
 </p>
 
-</td>
-
-<td width="50%" valign="top">
-
 <h3>2. Promote 175g Pack Sizes</h3>
 
 <p>
 Increase promotional activity and shelf visibility for <strong>175g packs</strong>, which showed strong demand across customer segments. Consider price promotions, multi-buy offers, and prominent shelf placement to encourage additional purchases.
 </p>
-
-</td>
-</tr>
-
-<tr>
-<td width="50%" valign="top">
 
 <h3>3. Strengthen High-Performing Brand Visibility</h3>
 
@@ -157,21 +143,11 @@ Increase promotional activity and shelf visibility for <strong>175g packs</stron
 Increase shelf visibility and promotional support for <strong>high-performing brands such as Smiths, Doritos, and Kettle</strong>. Ensuring these brands are easy to find could help maintain sales momentum and encourage repeat purchases.
 </p>
 
-</td>
-
-<td width="50%" valign="top">
-
 <h3>4. Develop Family-Oriented Bundles</h3>
 
 <p>
 Create <strong>bundle and multi-pack offers</strong> aimed at family-oriented customer segments, particularly older families showing strong purchasing activity. Bundling products could encourage larger basket sizes while providing customers with better value.
 </p>
-
-</td>
-</tr>
-
-<tr>
-<td width="50%" valign="top">
 
 <h3>5. Use Customer Segmentation for Targeted Promotions</h3>
 
@@ -179,19 +155,11 @@ Create <strong>bundle and multi-pack offers</strong> aimed at family-oriented cu
 Tailor promotions according to <strong>life stage and customer segment</strong> rather than applying the same strategy across all customers. This can help align products and offers with specific purchasing behaviours.
 </p>
 
-</td>
-
-<td width="50%" valign="top">
-
 <h3>Overall Recommendation</h3>
 
 <p>
 Prioritise <strong>Mainstream Young Singles/Couples</strong>, support demand for <strong>175g packs</strong>, maintain strong visibility for <strong>high-performing brands</strong>, and introduce targeted bundle offers for family segments.
 </p>
-
-</td>
-</tr>
-</table>
 
 
 ## Author
