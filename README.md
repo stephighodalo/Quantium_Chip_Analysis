@@ -54,14 +54,145 @@ The following visualisations explore customer purchasing behaviour, sales perfor
 
 ## Key Insights
 
-* Mainstream customers generated the highest chip sales
-* 175g pack sizes were most popular
-* Certain brands dominated premium segments
-* Young Singles/Couples were the most valuable segment
+<table>
+<tr>
+<td width="50%" valign="top">
 
-## Recommendation
+<h3> Customer Segments</h3>
 
-Focus marketing efforts on mainstream young customers and optimise product placement for 175g packs to increase category sales.
+<p>
+Mainstream young singles/couples contributed the highest total sales within the chips category. Budget older families also showed strong purchasing behaviour due to high transaction frequency.
+</p>
+
+</td>
+
+<td width="50%" valign="top">
+
+<h3> Brand Preferences</h3>
+
+<p>
+The most purchased brands were <strong>Smiths, Doritos, and Kettle</strong>. Premium customers showed a stronger preference for premium chip brands.
+</p>
+
+</td>
+</tr>
+
+<tr>
+<td width="50%" valign="top">
+
+<h3> Pack Size Preferences</h3>
+
+<p>
+The <strong>175g pack size</strong> generated the highest sales volume across most customer segments, suggesting a strong preference for medium-large pack sizes.
+</p>
+
+</td>
+
+<td width="50%" valign="top">
+
+<h3> Purchasing Behaviour</h3>
+
+<p>
+Transaction activity remained relatively stable throughout the year with occasional spikes, potentially linked to holiday and promotional periods.
+</p>
+
+</td>
+</tr>
+
+<tr>
+<td width="50%" valign="top">
+
+<h3> High-Value Customers</h3>
+
+<p>
+Mainstream customers generated the highest overall revenue due to a combination of higher transaction frequency and larger basket sizes.
+</p>
+
+</td>
+
+<td width="50%" valign="top">
+
+<h3> Business Implication</h3>
+
+<p>
+These findings can support targeted promotions, product placement decisions, brand strategy, and customer-specific marketing initiatives within the chips category.
+</p>
+
+</td>
+</tr>
+</table>
+
+
+## Recommendations
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+<h3>1. Target Mainstream Young Singles/Couples</h3>
+
+<p>
+Focus marketing campaigns and targeted promotions on <strong>Mainstream Young Singles/Couples</strong>, as this segment contributes significantly to overall chip sales. Personalised offers and digital promotions could encourage repeat purchases and increase basket size.
+</p>
+
+</td>
+
+<td width="50%" valign="top">
+
+<h3>2. Promote 175g Pack Sizes</h3>
+
+<p>
+Increase promotional activity and shelf visibility for <strong>175g packs</strong>, which showed strong demand across customer segments. Consider price promotions, multi-buy offers, and prominent shelf placement to encourage additional purchases.
+</p>
+
+</td>
+</tr>
+
+<tr>
+<td width="50%" valign="top">
+
+<h3>3. Strengthen High-Performing Brand Visibility</h3>
+
+<p>
+Increase shelf visibility and promotional support for <strong>high-performing brands such as Smiths, Doritos, and Kettle</strong>. Ensuring these brands are easy to find could help maintain sales momentum and encourage repeat purchases.
+</p>
+
+</td>
+
+<td width="50%" valign="top">
+
+<h3>4. Develop Family-Oriented Bundles</h3>
+
+<p>
+Create <strong>bundle and multi-pack offers</strong> aimed at family-oriented customer segments, particularly older families showing strong purchasing activity. Bundling products could encourage larger basket sizes while providing customers with better value.
+</p>
+
+</td>
+</tr>
+
+<tr>
+<td width="50%" valign="top">
+
+<h3>5. Use Customer Segmentation for Targeted Promotions</h3>
+
+<p>
+Tailor promotions according to <strong>life stage and customer segment</strong> rather than applying the same strategy across all customers. This can help align products and offers with specific purchasing behaviours.
+</p>
+
+</td>
+
+<td width="50%" valign="top">
+
+<h3>Overall Recommendation</h3>
+
+<p>
+Prioritise <strong>Mainstream Young Singles/Couples</strong>, support demand for <strong>175g packs</strong>, maintain strong visibility for <strong>high-performing brands</strong>, and introduce targeted bundle offers for family segments.
+</p>
+
+</td>
+</tr>
+</table>
+
 
 ## Author
 
